@@ -1,0 +1,24 @@
+footer {
+  background-color: black;
+  height: 35rem;
+  width: 100%;
+
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  clip-path: polygon(0 0, 100% 15%, 100% 100%, 0 100%);
+}
+
+.legal {
+  color: white;
+
+  grid-row: 4 / 5;
+  grid-column: 3 / 4;
+  /* justify-self: center; */
+  align-self: center;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
